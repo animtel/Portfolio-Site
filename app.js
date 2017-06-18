@@ -9,6 +9,18 @@ var index = require('./routes/index');
 
 var app = express();
 
+var opts = require('optimist')
+    .options({
+        port: {
+            demand: false,
+            alias: 'p',
+            description: 'port to listen to'
+        },
+    }).boolean('allow_discovery').argv;
+let PORT;
+if (opts.port) {
+    PORT = opts.port;
+} else PORT = 5555;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -41,4 +53,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.listen(PORT); console.log("App is listening on the port " + PORT);
 module.exports = app;
