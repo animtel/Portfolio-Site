@@ -27,4 +27,12 @@ npm i optimist
 ```
 npm start
 ```
-And open http://localhost:5555
+And open http://localhost:3000
+
+### Deployment on Azure with github.com
+
+This is a nice link for creating CI/CD for azure web app based on nodejs: 
+```
+https://medium.freecodecamp.org/how-to-deploy-your-super-cool-node-app-to-azure-from-github-47ebff6c5448
+```
+
