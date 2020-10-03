@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "serber",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,19 @@
     "ejs": "~2.5.6",
     "express": "~4.15.2",
     "morgan": "~1.8.1",
+    "optimist": "^0.6.1",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animtel/portfolio_site.git"
+  },
+  "author": "Daniel Kovalenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/animtel/portfolio_site/issues"
+  },
+  "homepage": "https://github.com/animtel/portfolio_site#readme"
 }
